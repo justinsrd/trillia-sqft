@@ -1,0 +1,14 @@
+{
+	"name": "trillia-sqft",
+	"version": "1.0.0",
+	"manifest_version": 2,
+	"description": "Shows price/sqft",
+	"permissions": ["storage"],
+	"content_scripts": [
+		{
+			"matches": ["*://*.trulia.com/*"],
+			"css": ["popup.css"],
+			"js": ["lib/jquery-3.2.1.min.js", "popup.js"]
+		}
+	]
+}
