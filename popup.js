@@ -44,7 +44,7 @@ function applySqft(cards) {
 			var price = priceElement.textContent.replace('$', '').replace(/,/g, '');
 			var sqft = sqftElement.textContent.replace(/,/g, '').replace(' sqft', '');
 			var pricePerSqft = String(Math.round(Number(price) / Number(sqft)));
-			var dataRow = card.querySelector('.FlexContainers__Columns-sc-1ezkc0e-2');
+			var dataRow = card.querySelector('.MediaBlock__MediaContainer-ldzu2c-0');
 
 			var el = document.createElement('div');
 			el.classList.add('dCeMHc'); // copy trulia class for styling
