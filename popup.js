@@ -41,7 +41,7 @@ function applySqft(cards) {
 		var sqftElement = card.querySelector('div[data-testid="property-floorSpace"]');
 
 		if (priceElement && sqftElement) {
-			var price = priceElement.textContent.replace('$', '').replace(/,/g, '');
+			var price = priceElement.textContent.replace('$', '').replace(/,/g, '').replace('+', '');
 			var sqft = sqftElement.textContent.replace(/,/g, '').replace(' sqft', '');
 			var pricePerSqft = String(Math.round(Number(price) / Number(sqft)));
 			var dataRow = card.querySelector('.MediaBlock__MediaContainer-ldzu2c-0');
